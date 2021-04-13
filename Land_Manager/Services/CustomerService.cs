@@ -32,6 +32,23 @@ namespace Services
             _context.SaveChanges();
         }
 
+        public void Update(Customer customer)
+        {
+            Customer entityToUpdate = Get(customer.Id);
+            _context.Entry(entityToUpdate).CurrentValues.SetValues(customer);
+
+            _context.SaveChanges();
+        }
+
+        public int GetNumberOfCustomers()
+        {
+            return GetAll().Count();
+        }
+
+        public bool IsEmailTaken(string email)
+        {
+            return GetAll().Any(t => t.Email == email);
+        }
         public Customer Get(int id)
         {
             return GetAll().FirstOrDefault(t => t.Id == id);
@@ -50,27 +67,50 @@ namespace Services
             return GetAll().Where(t => t.RentedLand.Id == landId);
         }
 
-        public double GetMoneyOwed(int tenantId)
+        private int GetMonthsSinceLastPayment(int customerId)
         {
-            int factor = GetMonthsSinceRenting(tenantId);
-
-            // If the tenent has no previous payments, get the date of moving in
-            if (HasPayments(tenantId))
+            // Check if payments is empty
+            if (_payments.GetAllFromCustomer(customerId).FirstOrDefault() == null)
             {
-                factor = GetMonthsSinceLastPayment(tenantId);
+                return 0;
             }
 
-            return CalculateMonthlyRent(tenantId) * factor;
+            TimeSpan date = DateTime.Now - Get(customerId).Payments.Last().Date;
+            return date.Days / 30;
         }
 
-        private int GetMonthsSinceRenting(int tenantId)
+        public double GetMoneyOwed(int customerId)
         {
-            return (int)(DateTime.Now - Get(tenantId).DateOfRenting).TotalDays / 30;
+            int factor = GetMonthsSinceRenting(customerId);
+
+            
+            if (HasPayments(customerId))
+            {
+                factor = GetMonthsSinceLastPayment(customerId);
+            }
+
+            return CalculateMonthlyRent(customerId) * factor;
         }
 
-         public bool HasPayments(int tenantId)
+        public int GetNumberOfCustomersInLand(int landId)
         {
-            if (Get(tenantId) == null || _payments.GetAllFromCustomer(tenantId).FirstOrDefault() == null)
+            return GetAll().Where(t => t.RentedLand.Id == landId).Count();
+        }
+
+        private double CalculateMonthlyRent(int customerId)
+        {
+            int landId = Get(customerId).RentedLand.Id;
+            return _lands.Get(landId).Rent / GetNumberOfCustomersInLand(landId);
+        }
+
+        private int GetMonthsSinceRenting(int customerId)
+        {
+            return (int)(DateTime.Now - Get(customerId).DateOfRenting).TotalDays / 30;
+        }
+
+         public bool HasPayments(int customerId)
+        {
+            if (Get(customerId) == null || _payments.GetAllFromCustomer(customerId).FirstOrDefault() == null)
             {
                 return false;
             }

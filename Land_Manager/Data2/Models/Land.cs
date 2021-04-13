@@ -23,6 +23,7 @@ namespace Data.Models
         [Display(Name = "Area In Square Meters")]
         public int Area { get; set; }
 
+        public int Rent { get; set; }
         public virtual IEnumerable<Customer> Customers { get; set; }
 
     }

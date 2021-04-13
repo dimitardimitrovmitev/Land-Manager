@@ -1,10 +1,14 @@
-﻿using System;
+﻿using Data;
+using Data.Models;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 
 namespace Services
 {
-    public class LandService
+    
+    public class PropertyService
     {
+        
     }
 }
