@@ -7,7 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Services;
 
-namespace Rent_Management_System
+namespace Land_Manager
 {
     public class Startup
     {
@@ -27,8 +27,8 @@ namespace Rent_Management_System
             services.AddTransient<ICustomer, CustomerService>();
             services.AddTransient<IPayment, PaymentService>();
 
-            services.AddDbContext<RmsContext>(
-               options => options.UseSqlServer(Configuration.GetConnectionString("RentManagementSystem")));
+             services.AddDbContext<RmsContext>(
+             options => options.UseSqlServer(Configuration.GetConnectionString("LandManager")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
