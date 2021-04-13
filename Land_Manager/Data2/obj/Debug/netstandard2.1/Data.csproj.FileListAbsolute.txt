@@ -1,0 +1,9 @@
+C:\Users\PC\Desktop\Land Manager\Land_Manager\Data2\bin\Debug\netstandard2.1\Data.deps.json
+C:\Users\PC\Desktop\Land Manager\Land_Manager\Data2\bin\Debug\netstandard2.1\Data.dll
+C:\Users\PC\Desktop\Land Manager\Land_Manager\Data2\bin\Debug\netstandard2.1\Data.pdb
+C:\Users\PC\Desktop\Land Manager\Land_Manager\Data2\obj\Debug\netstandard2.1\Data.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\Land Manager\Land_Manager\Data2\obj\Debug\netstandard2.1\Data.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\Land Manager\Land_Manager\Data2\obj\Debug\netstandard2.1\Data.AssemblyInfo.cs
+C:\Users\PC\Desktop\Land Manager\Land_Manager\Data2\obj\Debug\netstandard2.1\Data.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Land Manager\Land_Manager\Data2\obj\Debug\netstandard2.1\Data.dll
+C:\Users\PC\Desktop\Land Manager\Land_Manager\Data2\obj\Debug\netstandard2.1\Data.pdb
