@@ -35,6 +35,10 @@ namespace Data.Models
         [Phone]
         [Display(Name = "Phone Number")]
         public string PhoneNumber { get; set; }
+
+        public bool IsCancelled { get; set; }
+
+        public DateTime DateOfRenting { get; set; }
         public virtual Land RentedLand { get; set; }
         public virtual IEnumerable<Payment> Payments { get; set; }
 
