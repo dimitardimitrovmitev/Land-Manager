@@ -8,7 +8,6 @@ namespace Data.Models
     public class Land
     {
         public int Id { get; set; }
-        public Customer Customer { get; set; }
 
         [StringLength(80)]
         [Required]

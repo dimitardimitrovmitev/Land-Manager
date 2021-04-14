@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
+
 
 namespace Data.Models
 {
@@ -39,6 +39,7 @@ namespace Data.Models
         public bool IsCancelled { get; set; }
 
         public DateTime DateOfRenting { get; set; }
+        [Display(Name = "Rented Land")]
         public virtual Land RentedLand { get; set; }
         public virtual IEnumerable<Payment> Payments { get; set; }
 
