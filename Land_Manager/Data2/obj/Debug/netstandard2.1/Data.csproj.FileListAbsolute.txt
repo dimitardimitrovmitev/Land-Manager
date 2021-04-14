@@ -16,3 +16,12 @@ C:\Users\PC\Desktop\Land-Manager\Land_Manager\Data2\obj\Debug\netstandard2.1\Dat
 C:\Users\PC\Desktop\Land-Manager\Land_Manager\Data2\obj\Debug\netstandard2.1\Data.csproj.CoreCompileInputs.cache
 C:\Users\PC\Desktop\Land-Manager\Land_Manager\Data2\obj\Debug\netstandard2.1\Data.dll
 C:\Users\PC\Desktop\Land-Manager\Land_Manager\Data2\obj\Debug\netstandard2.1\Data.pdb
+C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Data2\bin\Debug\netstandard2.1\Data.deps.json
+C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Data2\bin\Debug\netstandard2.1\Data.dll
+C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Data2\bin\Debug\netstandard2.1\Data.pdb
+C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Data2\obj\Debug\netstandard2.1\Data.csprojAssemblyReference.cache
+C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Data2\obj\Debug\netstandard2.1\Data.AssemblyInfoInputs.cache
+C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Data2\obj\Debug\netstandard2.1\Data.AssemblyInfo.cs
+C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Data2\obj\Debug\netstandard2.1\Data.csproj.CoreCompileInputs.cache
+C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Data2\obj\Debug\netstandard2.1\Data.dll
+C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Data2\obj\Debug\netstandard2.1\Data.pdb
