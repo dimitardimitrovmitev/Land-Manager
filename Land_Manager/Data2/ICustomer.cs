@@ -16,5 +16,9 @@ namespace Data
         int GetNumberOfCustomersInLand(int landId);
         bool IsEmailTaken(string email);
         bool HasPayments(int id);
+
+        double GetMoneyOwed(int customerId);
+
+        void Cancel(int id);
     }
 }

@@ -37,7 +37,6 @@ namespace Data.Models
         public string PhoneNumber { get; set; }
 
         public bool IsCancelled { get; set; }
-
         public DateTime DateOfRenting { get; set; }
         [Display(Name = "Rented Land")]
         public virtual Land RentedLand { get; set; }

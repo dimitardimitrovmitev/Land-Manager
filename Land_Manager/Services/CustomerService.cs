@@ -92,6 +92,16 @@ namespace Services
             return CalculateMonthlyRent(customerId) * factor;
         }
 
+        public void Cancel(int id)
+        {
+            Customer customer = Get(id);
+            _context.Update(customer);
+
+            customer.IsCancelled = true;
+
+            _context.SaveChanges();
+        }
+
         public int GetNumberOfCustomersInLand(int landId)
         {
             return GetAll().Where(t => t.RentedLand.Id == landId).Count();
