@@ -14,9 +14,9 @@ namespace Services
         {
             _context = context;
         }
-        public void Add(Land property)
+        public void Add(Land land)
         {
-            _context.Add(property);
+            _context.Add(land);
             _context.SaveChanges();
         }
         public Land Get(int id)
@@ -31,10 +31,10 @@ namespace Services
         {
             return _context.Lands.Count();
         }
-        public void Update(Land property)
+        public void Update(Land land)
         {
-            Land entityToUpdate = Get(property.Id);
-            _context.Entry(entityToUpdate).CurrentValues.SetValues(property);
+            Land entityToUpdate = Get(land.Id);
+            _context.Entry(entityToUpdate).CurrentValues.SetValues(land);
 
             _context.SaveChanges();
         }

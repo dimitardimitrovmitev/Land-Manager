@@ -13,15 +13,12 @@ namespace Data.Models
         [Required]
         public string Address { get; set; }
 
-        [Required]
-        [Display(Name = "Amount In Euros")]
-        [Range(1, 999999, ErrorMessage = "Invalid value.")]
-        public double Cost { get; set; }
 
         [Range(1, 99999, ErrorMessage = "Invalid value.")]
         [Display(Name = "Area In Square Meters")]
         public int Area { get; set; }
-
+        [Display(Name = "Monthly Rent In Euro")]
+        [Range(0, 99999, ErrorMessage = "Invalid value.")]
         public int Rent { get; set; }
         public virtual IEnumerable<Customer> Customers { get; set; }
 

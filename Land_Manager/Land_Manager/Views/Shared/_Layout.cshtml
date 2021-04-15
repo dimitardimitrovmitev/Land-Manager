@@ -6,6 +6,7 @@
     <title>@ViewData["Title"] - Land_Manager</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/home.css" />
 </head>
 <body>
     <header>
@@ -21,9 +22,38 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
+
+
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a href="#propertySubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Land</a>
+                            <ul class="collapse list-unstyled" id="propertySubmenu">
+                                <li>
+                                    <a asp-controller="Land" asp-action="Add">Add New Land</a>
+                                </li>
+
+                                <li>
+                                    <a asp-controller="Land" asp-action="All">View Lands</a>
+                                </li>
+                            </ul>
                         </li>
+
+                        <li class="nav-item">
+                            <a href="#propertySubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Customer</a>
+                            <ul class="collapse list-unstyled" id="propertySubmenu">
+                                <li>
+                                    <a asp-controller="Customer" asp-action="Add">Add New Customer</a>
+                                </li>
+
+                                <li>
+                                    <a asp-controller="Customer" asp-action="All">View Customers</a>
+                                </li>
+                            </ul>
+                        </li>
+                      
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Payments" asp-action="All">Payments</a>
+                        </li>
+
                     </ul>
                 </div>
             </div>

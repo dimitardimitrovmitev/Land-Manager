@@ -61,7 +61,8 @@ namespace Rent_Management_System.Controllers
         {
             Land model = new Land()
             {
-                Area = 60
+                Area = 60,
+                Rent = 60
             };       
 
             return View(model);

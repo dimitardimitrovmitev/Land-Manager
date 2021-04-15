@@ -1,0 +1,118 @@
+﻿
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+html { 
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; 
+}
+
+main {
+    padding: 15px 2%;
+}
+
+.centered-form{
+    width: 65%;
+    margin: auto;
+}
+
+@media (max-width: 970px) {
+    .centered-form {
+        width: 100%;
+    }
+}
+
+
+.secondary-text {
+    font-size: 15px;
+    color: #f2f2f2;
+}
+
+.property-list-item {
+    background-color: #1b6ec2;
+    min-height: 100px;
+}
+
+.tenant-name {
+    font-weight: bold;
+    color: #1b6ec2;
+}
+
+.property-info{
+    font-size: 20px;
+}
+
+.tenant-info{
+    font-size: 20px;
+}
+
+.tenant-top-info {
+    border-bottom: 1px solid #a0a0a0;
+    padding-bottom: 20px;
+}
+
+.paid-up-title {
+    font-size: 30px;
+}
+
+.rent-collected-info{
+    font-size: 25px;
+}

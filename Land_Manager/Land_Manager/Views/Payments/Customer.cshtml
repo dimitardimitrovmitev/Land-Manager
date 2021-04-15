@@ -1,0 +1,26 @@
+﻿@model Land_Manager.Models.PaymentsModels.PaymentsFromCustomerListModel
+
+@{
+    ViewData["Title"] = "Payments";
+}
+
+<div class="mb-3">
+    <h3>All payments from <a asp-controller="Customers" asp-action="Index" asp-route-id="@Model.CustomerId" class="tenant-name">@Model.CustomerName</a></h3>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Amount in €</th>
+            <th scope="col">Payment Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var payment in Model.Payments)
+        {
+            <tr>
+                <td>@payment.Cost</td>
+                <td>@payment.Date</td>
+            </tr>
+        }
+    </tbody>
+</table>

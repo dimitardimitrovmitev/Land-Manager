@@ -1,0 +1,33 @@
+﻿@model Land_Manager.Models.CustomerModels.CustomerIndexModel
+
+@{
+    ViewData["Title"] = Model.CustomerName;
+}
+<div class="jumbotron">
+    <div class="tenant-top-info mb-3">
+        <h1>@Model.CustomerName</h1>
+        <h2 class="home-payments-title">@Model.CustomerAddress</h2>
+        <h2 class="home-payments-title">Moved in on @Model.DateOfRenting</h2>
+        <div class="tenant-info">Email: @Model.Email</div>
+        <div class="tenant-info">Phone: @Model.PhoneNumber</div>
+        <a asp-controller="Payment" asp-action="Tenant" asp-route-id="@Model.CustomerId" class="btn btn-secondary btn-sm mt-2">View Payments</a>
+        <a asp-action="Edit" asp-route-id="@Model.CustomerId" class="btn btn-info btn-sm mt-2">Edit Customer</a>
+    </div>
+    <div class="pt-2">
+        @{ if (Model.MoneyOwed > 0)
+            {
+                <h3>Money Owed: <b>€@Model.MoneyOwed</b></h3>
+                <form method="post">
+                    <button asp-action="PayRent" asp-route-id="@Model.CustomerId" class="btn btn-success">Mark As Paid</button>
+                </form>
+            }
+            else
+            {
+                <h3 class="paid-up-title">Customer is all paid-up.</h3>
+            }
+        }
+    </div>
+</div>
+<form method="post">
+    <button asp-action="Remove" asp-route-id="@Model.CustomerId" class="btn btn-danger btn-sm">Kick Customer Out</button>
+</form>
