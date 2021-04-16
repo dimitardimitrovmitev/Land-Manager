@@ -237,7 +237,6 @@ C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Land_Manager\obj
 C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Land_Manager\obj\Debug\netcoreapp3.1\Land_Manager.TagHelpers.output.cache
 C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Land_Manager\obj\Debug\netcoreapp3.1\Land_Manager.RazorCoreGenerate.cache
 C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Land_Manager\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Land_Manager\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Land_Manager\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Land_Manager\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Land_Manager\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -261,3 +260,14 @@ C:\Users\PC\Desktop\Land-Manager\Land_Manager\Land_Manager\obj\Debug\netcoreapp3
 C:\Users\PC\Desktop\Land-Manager\Land_Manager\Land_Manager\obj\Debug\netcoreapp3.1\Razor\Views\RentCollected\Index.cshtml.g.cs
 C:\Users\PC\Desktop\Land-Manager\Land_Manager\Land_Manager\obj\Debug\netcoreapp3.1\Razor\Views\Payments\All.cshtml.g.cs
 C:\Users\PC\Desktop\Land-Manager\Land_Manager\Land_Manager\obj\Debug\netcoreapp3.1\Razor\Views\Payments\Customer.cshtml.g.cs
+C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Land_Manager\obj\Debug\netcoreapp3.1\Razor\Views\Customer\Add.cshtml.g.cs
+C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Land_Manager\obj\Debug\netcoreapp3.1\Razor\Views\Customer\All.cshtml.g.cs
+C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Land_Manager\obj\Debug\netcoreapp3.1\Razor\Views\Customer\Edit.cshtml.g.cs
+C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Land_Manager\obj\Debug\netcoreapp3.1\Razor\Views\Customer\Index.cshtml.g.cs
+C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Land_Manager\obj\Debug\netcoreapp3.1\Razor\Views\Land\Add.cshtml.g.cs
+C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Land_Manager\obj\Debug\netcoreapp3.1\Razor\Views\Land\All.cshtml.g.cs
+C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Land_Manager\obj\Debug\netcoreapp3.1\Razor\Views\Land\Edit.cshtml.g.cs
+C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Land_Manager\obj\Debug\netcoreapp3.1\Razor\Views\Land\Index.cshtml.g.cs
+C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Land_Manager\obj\Debug\netcoreapp3.1\Razor\Views\Payments\All.cshtml.g.cs
+C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Land_Manager\obj\Debug\netcoreapp3.1\Razor\Views\Payments\Customer.cshtml.g.cs
+C:\Users\SHTERIO\Desktop\Land_Manager\Land-Manager\Land_Manager\Land_Manager\obj\Debug\netcoreapp3.1\Razor\Views\RentCollected\Index.cshtml.g.cs
