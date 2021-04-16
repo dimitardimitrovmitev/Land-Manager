@@ -7902,19 +7902,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PC\\.nuget\\packages\\": {}
+    "C:\\Users\\SHTERIO\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Desktop\\Land-Manager\\Land_Manager\\Data2\\Data.csproj",
+      "projectUniqueName": "C:\\Users\\SHTERIO\\Desktop\\Land_Manager\\Land-Manager\\Land_Manager\\Data2\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "C:\\Users\\PC\\Desktop\\Land-Manager\\Land_Manager\\Data2\\Data.csproj",
-      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Desktop\\Land-Manager\\Land_Manager\\Data2\\obj\\",
+      "projectPath": "C:\\Users\\SHTERIO\\Desktop\\Land_Manager\\Land-Manager\\Land_Manager\\Data2\\Data.csproj",
+      "packagesPath": "C:\\Users\\SHTERIO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SHTERIO\\Desktop\\Land_Manager\\Land-Manager\\Land_Manager\\Data2\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SHTERIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7980,7 +7984,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
