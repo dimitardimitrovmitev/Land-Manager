@@ -5,7 +5,7 @@ using Land_Manager.Models.LandModels;
 using Land_Manager.Models.CustomerModels;
 using System.Linq;
 
-namespace Rent_Management_System.Controllers
+namespace Land_Manager.Controllers
 {
     public class LandController : Controller
     {
