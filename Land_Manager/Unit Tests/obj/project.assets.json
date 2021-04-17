@@ -8021,23 +8021,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SHTERIO\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\PC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SHTERIO\\Desktop\\Land_Manager\\Land-Manager\\Land_Manager\\Unit Tests\\Unit Tests.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Desktop\\Land-Manager\\Land_Manager\\Unit Tests\\Unit Tests.csproj",
       "projectName": "Unit Tests",
-      "projectPath": "C:\\Users\\SHTERIO\\Desktop\\Land_Manager\\Land-Manager\\Land_Manager\\Unit Tests\\Unit Tests.csproj",
-      "packagesPath": "C:\\Users\\SHTERIO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SHTERIO\\Desktop\\Land_Manager\\Land-Manager\\Land_Manager\\Unit Tests\\obj\\",
+      "projectPath": "C:\\Users\\PC\\Desktop\\Land-Manager\\Land_Manager\\Unit Tests\\Unit Tests.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PC\\Desktop\\Land-Manager\\Land_Manager\\Unit Tests\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\SHTERIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8051,14 +8047,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\SHTERIO\\Desktop\\Land_Manager\\Land-Manager\\Land_Manager\\Data2\\Data.csproj": {
-              "projectPath": "C:\\Users\\SHTERIO\\Desktop\\Land_Manager\\Land-Manager\\Land_Manager\\Data2\\Data.csproj"
+            "C:\\Users\\PC\\Desktop\\Land-Manager\\Land_Manager\\Data2\\Data.csproj": {
+              "projectPath": "C:\\Users\\PC\\Desktop\\Land-Manager\\Land_Manager\\Data2\\Data.csproj"
             },
-            "C:\\Users\\SHTERIO\\Desktop\\Land_Manager\\Land-Manager\\Land_Manager\\Land_Manager\\Land_Manager.csproj": {
-              "projectPath": "C:\\Users\\SHTERIO\\Desktop\\Land_Manager\\Land-Manager\\Land_Manager\\Land_Manager\\Land_Manager.csproj"
+            "C:\\Users\\PC\\Desktop\\Land-Manager\\Land_Manager\\Land_Manager\\Land_Manager.csproj": {
+              "projectPath": "C:\\Users\\PC\\Desktop\\Land-Manager\\Land_Manager\\Land_Manager\\Land_Manager.csproj"
             },
-            "C:\\Users\\SHTERIO\\Desktop\\Land_Manager\\Land-Manager\\Land_Manager\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\SHTERIO\\Desktop\\Land_Manager\\Land-Manager\\Land_Manager\\Services\\Services.csproj"
+            "C:\\Users\\PC\\Desktop\\Land-Manager\\Land_Manager\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\PC\\Desktop\\Land-Manager\\Land_Manager\\Services\\Services.csproj"
             }
           }
         }
@@ -8105,11 +8101,14 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
