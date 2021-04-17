@@ -1,8 +1,69 @@
-﻿@{
+﻿@model Land_Manager.Models.HomeViewModel
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div align="center">
+    <h1 class="display-4" style="text-align:center;font-weight:bold;margin-bottom:40px">Land Manager</h1>
+    <a class="btn"
+       asp-controller="Customer"
+       asp-action="Index"
+       style="color:white;font-weight:bold; background-color:deepskyblue; width:200px">
+
+        <div style="font-size:30px">
+            Customers:
+        </div>
+        <div style="text-align:center; font-size:30px">
+            @Model.CustomerCount
+        </div>
+    </a>
+
+    <a class="btn"
+       asp-controller="Land"
+       asp-action="All"
+       style="color:white;font-weight:bold; background-color:lawngreen; width:200px">
+
+        <div style="font-size:30px">
+            Lands:
+        </div>
+        <div style="text-align:center; font-size:30px">
+            @Model.LandCount
+        </div>
+    </a>
+
+    <a class="btn"
+       asp-controller="Payments"
+       asp-action="All"
+       style="color:white;font-weight:bold; background-color:mediumvioletred; width:200px">
+
+        <div style="font-size:30px">
+            Money:
+        </div>
+        <div style="text-align:center; font-size:30px">
+            €@Model.RentCollectedThisMonth
+        </div>
+    </a>
+
+
+    <div class="mt-4">
+        <div class="mt-4 recent-payment-container">
+            @if (Model.PaymentsThisMonth.Count() > 0)
+            {
+                <h5 style="font-size:30px;font-weight:bold">Recent Payments</h5>
+            }
+            <div>
+                @foreach (var payment in Model.PaymentsThisMonth)
+                {
+
+
+
+                    <div class="row">
+                        <div class="col-6 mb-2 mt-2"><a asp-controller="Customers" asp-action="Index" asp-route-id="@payment.CustomerId">@payment.CustomerName</a></div>
+                        <div class="col-6 mb-2 mt-2">+€@payment.Cost</div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
 </div>
