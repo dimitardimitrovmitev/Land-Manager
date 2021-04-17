@@ -3,6 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Data
 {
+    /// <summary>
+    /// Database context of the application
+    /// </summary>
     public class RmsContext : DbContext
     {
         public RmsContext(DbContextOptions options) : base(options) { }
