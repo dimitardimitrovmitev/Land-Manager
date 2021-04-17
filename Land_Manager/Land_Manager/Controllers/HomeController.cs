@@ -33,7 +33,7 @@ namespace Land_Manager.Controllers
                 {
                     CustomerId = p.Customer.Id,
                     CustomerName = p.Customer.FullName,
-                    Cost = p.Amount,
+                    Cost = p.Cost,
                     Date = p.Date.ToString("dd/MM/yyyy")
                 })
             };

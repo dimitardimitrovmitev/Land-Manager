@@ -33,7 +33,8 @@ namespace Land_Manager.Controllers
                     CustomerAddress = customer.RentedLand.Address,
                     DateOfRenting = customer.DateOfRenting.Date.ToString("dd/MM/yyyy"),
                     Email = customer.Email,
-                    PhoneNumber = customer.PhoneNumber
+                    PhoneNumber = customer.PhoneNumber,
+                    MoneyOwed = _customers.GetMoneyOwed(customer.Id)
                 };
 
                 return View(model);
@@ -54,6 +55,8 @@ namespace Land_Manager.Controllers
                     Email = t.Email,
                     PhoneNumber = t.PhoneNumber,
                     DateOfRenting = t.DateOfRenting.ToString("dd/MM/yyyy"),
+                    Debt = _customers.GetMoneyOwed(t.Id)
+
                 })
             };
 
@@ -124,7 +127,7 @@ namespace Land_Manager.Controllers
                     return View(model);
                 }
 
-                Customer newTenant = new Customer()
+                Customer newCustomer = new Customer()
                 {
                     FirstName = model.Customer.FirstName,
                     LastName = model.Customer.LastName,
@@ -133,7 +136,7 @@ namespace Land_Manager.Controllers
                     DateOfRenting = model.Customer.DateOfRenting
                 };
 
-                _customers.Add(newTenant, model.RentedLandId);
+                _customers.Add(newCustomer, model.RentedLandId);
 
                 return RedirectToAction("All");
             }
@@ -147,7 +150,7 @@ namespace Land_Manager.Controllers
             Payment payment = new Payment()
             {
                 Customer = _customers.Get(id),
-                Amount = _customers.GetMoneyOwed(id),
+                Cost = _customers.GetMoneyOwed(id),
                 Date = DateTime.Now
             };
 

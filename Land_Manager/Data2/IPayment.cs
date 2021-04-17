@@ -9,7 +9,7 @@ namespace Data
         void Add(Payment payment);
         Payment Get(int id);
         IEnumerable<Payment> GetAll();
-        IEnumerable<Payment> GetAllFromCustomer(int Id);
+        IEnumerable<Payment> GetAllFromCustomer(int customerId);
         IEnumerable<Payment> GetAllFromMonth(int month);
         double GetPaymentSum(int customerId);
         double GetAmountFromMonth(int month);

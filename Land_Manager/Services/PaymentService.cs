@@ -65,7 +65,7 @@ namespace Services
             double sum = 0;
             foreach (var payment in GetAllFromCustomer(customerId))
             {
-                sum += payment.Amount;
+                sum += payment.Cost;
             }
             return sum;
         }
@@ -117,7 +117,7 @@ namespace Services
             double sum = 0;
             foreach (var payment in payments)
             {
-                sum += payment.Amount;
+                sum += payment.Cost;
             }
             return sum;
         }

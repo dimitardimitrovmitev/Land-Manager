@@ -24,7 +24,7 @@ namespace Data.Models
         [Required]
         [Display(Name = "Amount In Euros")]
         [Range(1, 999999, ErrorMessage = "Invalid value.")]
-        public double Amount { get; set; }
+        public double Cost   { get; set; }
         /// <summary>
         /// Date of the transaction
         /// </summary>
