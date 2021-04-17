@@ -1,0 +1,247 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Services</name>
+    </assembly>
+    <members>
+        <member name="T:Services.Common.StringManipulation">
+            <summary>
+            String Manipulation
+            </summary>
+        </member>
+        <member name="M:Services.Common.StringManipulation.NormalizeName(System.String)">
+            <summary>
+            Capitalize the first letter in a string and make the rest lowercase
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Services.CustomerService">
+            <summary>
+            Handles most of the business logic, that has to do with the customer
+            </summary>
+        </member>
+        <member name="M:Services.CustomerService.#ctor(Data.RmsContext,Data.ILand,Data.IPayment)">
+            <summary>
+            Constructor for the class
+            </summary>
+            <param name="context"></param>
+            <param name="lands"></param>
+            <param name="payments"></param>
+        </member>
+        <member name="M:Services.CustomerService.Add(Data.Models.Customer,System.Int32)">
+            <summary>
+            Adds a new Customer and links him to a land
+            </summary>
+            <param name="customer">Customer object</param>
+            <param name="rentedLandId">Id for a rented land instance</param>
+        </member>
+        <member name="M:Services.CustomerService.Update(Data.Models.Customer)">
+            <summary>
+            Update customer data
+            </summary>
+            <param name="customer"></param>
+        </member>
+        <member name="M:Services.CustomerService.GetNumberOfCustomers">
+            <summary>
+            Get the number of all customer records
+            </summary>
+            <returns>Customer count</returns>
+        </member>
+        <member name="M:Services.CustomerService.IsEmailTaken(System.String)">
+            <summary>
+            Checks if there's a customer with the given email
+            </summary>
+            <param name="email">The email being checked</param>
+            <returns></returns>
+        </member>
+        <member name="M:Services.CustomerService.Get(System.Int32)">
+            <summary>
+            Get a single customer by id
+            </summary>
+            <param name="id">Customer id</param>
+            <returns>Customer with the corresponding id or null if not found</returns>
+        </member>
+        <member name="M:Services.CustomerService.GetAll">
+            <summary>
+             Get all customer records, except the ones that have left the land
+            </summary>
+            <returns>All customers</returns>
+        </member>
+        <member name="M:Services.CustomerService.GetAllFromLand(System.Int32)">
+            <summary>
+            Get all customer records from a specific land
+            </summary>
+            <param name="landId">Id of the land</param>
+            <returns>All customers found</returns>
+        </member>
+        <member name="M:Services.CustomerService.GetMonthsSinceLastPayment(System.Int32)">
+            <summary>
+            Get the number of months passed since a customer's last payment
+            </summary>
+            <param name="customerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Services.CustomerService.GetMoneyOwed(System.Int32)">
+            <summary>
+            Calculate the debt of a single customer
+            </summary>
+            <param name="customerId">Id of the customer</param>
+            <returns>The amount of money owed</returns>
+        </member>
+        <member name="M:Services.CustomerService.Cancel(System.Int32)">
+            <summary>
+            Set Cancled to thrue
+            </summary>
+            <param name="id">Id of user who leaves the land</param>
+        </member>
+        <member name="M:Services.CustomerService.GetNumberOfCustomersInLand(System.Int32)">
+            <summary>
+            Get the number of all customer records that have rented land
+            </summary>
+            <param name="landId">Id of the land</param>
+            <returns>The number of customers</returns>
+        </member>
+        <member name="M:Services.CustomerService.CalculateMonthlyRent(System.Int32)">
+            <summary>
+            Split the rent of the land equally between the customers (if tow or more have rented one)
+            </summary>
+            <param name="customerId">Id of the customer beign evaluated</param>
+            <returns></returns>
+        </member>
+        <member name="M:Services.CustomerService.GetMonthsSinceRenting(System.Int32)">
+            <summary>
+            Get the number of months passed since a customer moved into a property
+            </summary>
+            <param name="customerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Services.CustomerService.HasPayments(System.Int32)">
+            <summary>
+            Check if a customer has made any payments
+            </summary>
+            <param name="customerId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Services.LandService">
+            <summary>
+            Handles the land business logic
+            </summary>
+        </member>
+        <member name="M:Services.LandService.#ctor(Data.RmsContext)">
+            <summary>
+            Constuctor for the Land Service
+            </summary>
+            <param name="context">Database context</param>
+        </member>
+        <member name="M:Services.LandService.Add(Data.Models.Land)">
+            <summary>
+            Adds a new land to the Database
+            </summary>
+            <param name="land"></param>
+        </member>
+        <member name="M:Services.LandService.Get(System.Int32)">
+            <summary>
+            Returns a single land, specified by id
+            </summary>
+            <param name="id">A land matching the id or null if none matches</param>
+            <returns></returns>
+        </member>
+        <member name="M:Services.LandService.GetAll">
+            <summary>
+            Returns all land records
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Services.LandService.GetNumberOfLands">
+            <summary>
+            Gets the number of all lands
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Services.LandService.Update(Data.Models.Land)">
+            <summary>
+            Update the values of a single land
+            </summary>
+            <param name="land"></param>
+        </member>
+        <member name="T:Services.PaymentService">
+            <summary>
+            Handles the payment business logic
+            </summary>
+        </member>
+        <member name="M:Services.PaymentService.#ctor(Data.RmsContext)">
+            <summary>
+            Constuctor for the Payment Service
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Services.PaymentService.Add(Data.Models.Payment)">
+            <summary>
+            Adds a new Payment to the Database
+            </summary>
+            <param name="payment"></param>
+        </member>
+        <member name="M:Services.PaymentService.Get(System.Int32)">
+            <summary>
+            Returns a single payment, specified by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Services.PaymentService.GetAll">
+            <summary>
+            Returns all payment records ordered by date in descending order
+            </summary>
+            <returns>All the Payments</returns>
+        </member>
+        <member name="M:Services.PaymentService.GetAllFromCustomer(System.Int32)">
+            <summary>
+            All payments from a specific customer
+            </summary>
+            <param name="customerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Services.PaymentService.GetPaymentSum(System.Int32)">
+            <summary>
+            Get the sum of all payments made by a specific customer
+            </summary>
+            <param name="customerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Services.PaymentService.GetAllFromMonth(System.Int32)">
+            <summary>
+            Get all payments made on a specific month
+            </summary>
+            <param name="month"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Services.PaymentService.GetAmountFromMonth(System.Int32)">
+            <summary>
+            Get sum of payments made on a specific month
+            </summary>
+            <param name="month"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Services.PaymentService.GetAmountFromYear(System.Int32)">
+            <summary>
+            Get sum of payments made from a specific year
+            </summary>
+            <param name="year"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Services.PaymentService.GetAmountFromAllTime">
+            <summary>
+            Get the sum of all payments regardless of the date
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Services.PaymentService.GetPaymentsAmount(System.Collections.Generic.IEnumerable{Data.Models.Payment})">
+            <summary>
+            Get the sum of money from a list of payments
+            </summary>
+            <param name="payments"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

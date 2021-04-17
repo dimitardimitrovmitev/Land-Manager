@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Data</name>
+    </assembly>
+    <members>
+        <member name="T:Data.Models.Customer">
+            <summary>
+            Entity that occupies a single land and makes payments
+            </summary>
+        </member>
+        <member name="P:Data.Models.Customer.Id">
+            <summary>
+            Integer, that serves as an identification number for the object 
+            </summary>
+        </member>
+        <member name="P:Data.Models.Customer.FirstName">
+            <summary>
+            First name of the customer
+            </summary>
+        </member>
+        <member name="P:Data.Models.Customer.LastName">
+            <summary>
+            Last name of the customer
+            </summary>
+        </member>
+        <member name="P:Data.Models.Customer.FullName">
+            <summary>
+            The first and last name of the customer, combined
+            </summary>
+        </member>
+        <member name="P:Data.Models.Customer.Email">
+            <summary>
+            Personal email of the customer
+            </summary>
+        </member>
+        <member name="P:Data.Models.Customer.PhoneNumber">
+            <summary>
+            Phone number of the customer
+            </summary>
+        </member>
+        <member name="P:Data.Models.Customer.IsCancelled">
+            <summary>
+            The date, the customer have left the land
+            </summary>
+        </member>
+        <member name="P:Data.Models.Customer.DateOfRenting">
+            <summary>
+            The date, the customer rented the land
+            </summary>
+        </member>
+        <member name="P:Data.Models.Customer.RentedLand">
+            <summary>
+            The land which the custommer have rented
+            </summary>
+        </member>
+        <member name="P:Data.Models.Customer.Payments">
+            <summary>
+            List of payments, the customer has made
+            </summary>
+        </member>
+        <member name="T:Data.Models.Land">
+            <summary>
+            The object customers are assigned to and get their monthly rent decided by
+            A single land can have multiple customers
+            </summary>
+        </member>
+        <member name="P:Data.Models.Land.Id">
+            <summary>
+            Integer, that serves as an identification number for the object 
+            </summary>
+        </member>
+        <member name="P:Data.Models.Land.Address">
+            <summary>
+            Name of the address of the property (Location)
+            </summary>
+        </member>
+        <member name="P:Data.Models.Land.Area">
+            <summary>
+            Area of the land, mesured in decare
+            </summary>
+        </member>
+        <member name="P:Data.Models.Land.Rent">
+            <summary>
+            The monthly rent of the land
+            </summary>
+        </member>
+        <member name="P:Data.Models.Land.Customers">
+            <summary>
+            Reference to a list of customers, that have rented the property
+            </summary>
+        </member>
+        <member name="T:Data.Models.Payment">
+            <summary>
+            Used to document the transactions made from tenants, i.e., paying rent
+            </summary>
+        </member>
+        <member name="P:Data.Models.Payment.Id">
+            <summary>
+            Used to document the transactions made from tenants, i.e., paying rent
+            </summary>
+        </member>
+        <member name="P:Data.Models.Payment.Customer">
+            <summary>
+            The customer who made the payment
+            </summary>
+        </member>
+        <member name="P:Data.Models.Payment.Cost">
+            <summary>
+            The amount of money given by the customer
+            </summary>
+        </member>
+        <member name="P:Data.Models.Payment.Date">
+            <summary>
+            Date of the transaction
+            </summary>
+        </member>
+        <member name="T:Data.RmsContext">
+            <summary>
+            Database context of the application
+            </summary>
+        </member>
+    </members>
+</doc>
