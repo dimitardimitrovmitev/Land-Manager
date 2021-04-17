@@ -8,7 +8,7 @@ using Services.Common;
 namespace Services
 {
     /// <summary>
-    /// Handles most of the business logic, that has to do with the tenant
+    /// Handles most of the business logic, that has to do with the customer
     /// </summary>
     public class CustomerService : ICustomer
     {

@@ -22,10 +22,10 @@ namespace Data.Models
         [Required]
         public string Address { get; set; }
         /// <summary>
-        /// Area of the land, mesured in square meters
+        /// Area of the land, mesured in decare
         /// </summary>
         [Range(1, 99999, ErrorMessage = "Invalid value.")]
-        [Display(Name = "Area In Square Meters")]
+        [Display(Name = "Area In Decare")]
         public int Area { get; set; }
         /// <summary>
         /// The monthly rent of the land
