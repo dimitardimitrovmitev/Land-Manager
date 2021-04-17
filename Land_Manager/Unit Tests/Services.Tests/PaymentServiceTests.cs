@@ -53,7 +53,7 @@ namespace UnitTests.Services.Tests
                 new Payment
                 {
                     Id = 1,
-                    Amount = 150,
+                    Cost = 150,
                     Date = DateTime.Now,
                     Customer = customers[0]
                 }

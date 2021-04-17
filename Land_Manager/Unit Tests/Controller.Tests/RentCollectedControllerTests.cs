@@ -55,7 +55,7 @@ namespace UnitTests.Controller.Tests
                 new Payment
                 {
                     Id = 1,
-                    Amount = 100,
+                    Cost = 100,
                     Date = DateTime.Now,
                     Customer = customers[0]
                 }
