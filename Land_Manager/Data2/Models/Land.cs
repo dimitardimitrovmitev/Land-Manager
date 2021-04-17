@@ -20,12 +20,13 @@ namespace Data.Models
         /// </summary>
         [StringLength(80)]
         [Required]
+        [Display(Name = "Location")]
         public string Address { get; set; }
         /// <summary>
         /// Area of the land, mesured in decare
         /// </summary>
         [Range(1, 99999, ErrorMessage = "Invalid value.")]
-        [Display(Name = "Area In Decare")]
+        [Display(Name = "Area In Decares")]
         public int Area { get; set; }
         /// <summary>
         /// The monthly rent of the land
